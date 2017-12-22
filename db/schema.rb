@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 20171222231954) do
   end
 
   create_table "actors_movies", force: :cascade do |t|
+    t.integer "actor_id"
+    t.integer "movie_id"
   end
 
   create_table "movies", force: :cascade do |t|
