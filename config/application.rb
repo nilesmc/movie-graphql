@@ -31,6 +31,6 @@ module MovieGraphql
     config.api_only = true
 
 
-    config.autoload_paths < < Rails.root.join("app", "types")
+    config.autoload_paths << Rails.root.join("app", "types")
   end
 end
